@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UTS_Lab3_MobileProgramming</string>
+    <string name="meal1_text">Greek salad with lettuce, green onion</string>
+    <string name="meal2_text">Salad of fresh vegetables</string>
+</resources>

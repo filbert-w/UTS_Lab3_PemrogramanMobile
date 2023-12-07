@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    <View
+        android:layout_width="203dp"
+        android:layout_height="203dp"
+        android:background="@drawable/ellipse203"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jam"
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        android:text="9:41"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/cellularconnection"
+        android:layout_width="17dp"
+        android:layout_height="11dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/cellularconnection"
+        app:layout_constraintEnd_toStartOf="@id/wifi"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:id="@+id/wifi"
+        android:layout_width="15dp"
+        android:layout_height="11dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/wifi"
+        app:layout_constraintEnd_toStartOf="@id/battery"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:id="@+id/battery"
+        android:layout_width="24dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/battery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <View
+        android:id="@+id/notification"
+        android:layout_width="16dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profilepicture"
+        />
+
+    <ImageView
+        android:id="@+id/profilepicture"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/profilepicture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jam"/>
+
+    <TextView
+        android:id="@+id/goodmorningtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:text="Hello, Good Morning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilepicture" />
+
+    <TextView
+        android:id="@+id/sophiatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="5dp"
+        android:text="Sophia !"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goodmorningtext" />
+
+    <View
+        android:id="@+id/searchbox"
+        android:layout_width="318dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/searchbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sophiatext" />
+
+    <View
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/search"
+        app:layout_constraintStart_toStartOf="@id/searchbox"
+        app:layout_constraintTop_toTopOf="@id/searchbox" />
+
+    <View
+        android:id="@+id/rect476"
+        android:layout_width="387dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rect476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchbox" />
+
+    <View
+        android:id="@+id/girl_stretch"
+        android:layout_width="195dp"
+        android:layout_height="249dp"
+        android:background="@drawable/girlstretchingback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchbox"
+        />
+
+    <TextView
+        android:id="@+id/fit_young_text"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="FIT YOUNG WOMAN DOING BATTLE STRETCH TRAINING"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/rect476"
+        app:layout_constraintTop_toTopOf="@id/rect476" />
+
+    <View
+        android:id="@+id/startexerciserect"
+        android:layout_width="110dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="180dp"
+        android:background="@drawable/startexerciserect"
+        app:layout_constraintStart_toStartOf="@id/rect476"
+        app:layout_constraintTop_toBottomOf="@id/fit_young_text"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/startexercise_text"
+        android:layout_width="107dp"
+        android:layout_height="20dp"
+        android:text="Start Exercise"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/startexerciserect"
+        app:layout_constraintEnd_toEndOf="@id/startexerciserect"
+        app:layout_constraintTop_toTopOf="@id/startexerciserect"
+        app:layout_constraintBottom_toBottomOf="@id/startexerciserect"
+        />
+
+    <View
+        android:id="@+id/picture_1646325803"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/pict1646325803"
+        app:layout_constraintStart_toEndOf="@id/girl_stretch"
+        app:layout_constraintTop_toBottomOf="@id/startexercise_text" />
+
+    <TextView
+        android:id="@+id/select_your_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="SELECT YOUR GOAL"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/girl_stretch"
+        />
+    
+    <View
+        android:id="@+id/bg1"
+        android:layout_width="90dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg1"
+        android:layout_margin="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_your_goal"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/loose_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loose Weight"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/bg1"
+        app:layout_constraintEnd_toEndOf="@id/bg1"
+        app:layout_constraintTop_toTopOf="@id/bg1"
+        app:layout_constraintBottom_toBottomOf="@id/bg1"
+        />
+
+    <View
+        android:id="@+id/bg2"
+        android:layout_width="90dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg2"
+        android:layout_margin="15dp"
+        app:layout_constraintTop_toBottomOf="@id/select_your_goal"
+        app:layout_constraintStart_toEndOf="@id/bg1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/gain_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gain Weight"
+        android:textColor="@color/white"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/bg2"
+        app:layout_constraintEnd_toEndOf="@id/bg2"
+        app:layout_constraintTop_toTopOf="@id/bg2"
+        app:layout_constraintBottom_toBottomOf="@id/bg2"
+        />
+
+    <View
+        android:id="@+id/bg3"
+        android:layout_width="90dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg1"
+        android:layout_margin="15dp"
+        app:layout_constraintStart_toEndOf="@id/bg2"
+        app:layout_constraintTop_toBottomOf="@id/select_your_goal"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/body_building"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body Building"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/bg3"
+        app:layout_constraintEnd_toEndOf="@id/bg3"
+        app:layout_constraintTop_toTopOf="@id/bg3"
+        app:layout_constraintBottom_toBottomOf="@id/bg3"
+        />
+
+    <View
+        android:id="@+id/bg4"
+        android:layout_width="90dp"
+        android:layout_height="32dp"
+        android:background="@drawable/bg1"
+        android:layout_margin="15dp"
+        app:layout_constraintStart_toEndOf="@id/bg3"
+        app:layout_constraintTop_toBottomOf="@id/select_your_goal"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/healthy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Healthy"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/bg4"
+        app:layout_constraintEnd_toEndOf="@id/bg4"
+        app:layout_constraintTop_toTopOf="@id/bg4"
+        app:layout_constraintBottom_toBottomOf="@id/bg4"
+        />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="10dp"
+        android:text="CATEGORY"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg1"
+        />
+
+    <TextView
+        android:id="@+id/categoryseeall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="See All"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:alpha="0.84"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg1"
+        />
+
+    <ImageView
+        android:id="@+id/ellipse214"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ellipse1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category"/>
+
+    <ImageView
+        android:id="@+id/ellipse215"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ellipse2"
+        app:layout_constraintStart_toEndOf="@id/ellipse214"
+        app:layout_constraintTop_toBottomOf="@id/category"/>
+
+    <ImageView
+        android:id="@+id/ellipse216"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ellipse3"
+        app:layout_constraintStart_toEndOf="@id/ellipse215"
+        app:layout_constraintTop_toBottomOf="@id/category"/>
+
+    <ImageView
+        android:id="@+id/ellipse217"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ellipse4"
+        app:layout_constraintStart_toEndOf="@id/ellipse216"
+        app:layout_constraintTop_toBottomOf="@id/category"/>
+
+    <ImageView
+        android:id="@+id/ellipse218"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ellipse5"
+        app:layout_constraintStart_toEndOf="@id/ellipse217"
+        app:layout_constraintTop_toBottomOf="@id/category"/>
+
+    <TextView
+        android:id="@+id/yoga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Yoga"
+        android:textStyle="bold"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/ellipse214"
+        app:layout_constraintEnd_toEndOf="@id/ellipse214"
+        app:layout_constraintTop_toBottomOf="@id/ellipse214"
+        />
+
+    <TextView
+        android:id="@+id/gym"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Gym"
+        android:textStyle="bold"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/ellipse215"
+        app:layout_constraintEnd_toEndOf="@id/ellipse215"
+        app:layout_constraintTop_toBottomOf="@id/ellipse214"
+        />
+
+    <TextView
+        android:id="@+id/cardio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Cardio"
+        android:textStyle="bold"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/ellipse216"
+        app:layout_constraintEnd_toEndOf="@id/ellipse216"
+        app:layout_constraintTop_toBottomOf="@id/ellipse214"
+        />
+
+    <TextView
+        android:id="@+id/stretch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Stretch"
+        android:textStyle="bold"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/ellipse217"
+        app:layout_constraintEnd_toEndOf="@id/ellipse217"
+        app:layout_constraintTop_toBottomOf="@id/ellipse214"
+        />
+
+    <TextView
+        android:id="@+id/fullbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Full Body"
+        android:textStyle="bold"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/ellipse218"
+        app:layout_constraintEnd_toEndOf="@id/ellipse218"
+        app:layout_constraintTop_toBottomOf="@id/ellipse214"
+        />
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="5dp"
+        android:background="@drawable/line1"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/yoga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/popularexercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="POPULAR EXERCISE"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/category"
+        app:layout_constraintTop_toBottomOf="@id/yoga"
+        />
+
+    <TextView
+        android:id="@+id/seeall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="See All"
+        android:textSize="18sp"
+        android:alpha="0.84"
+        app:layout_constraintEnd_toEndOf="@id/categoryseeall"
+        app:layout_constraintTop_toTopOf="@id/popularexercise"
+        app:layout_constraintBottom_toBottomOf="@id/popularexercise"
+        />
+
+    <ImageView
+        android:id="@+id/gambar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gambar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popularexercise"
+        />
+
+    <View
+        android:id="@+id/whiterect1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/whiterectangle"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="@id/gambar1"
+        app:layout_constraintTop_toTopOf="@id/gambar1"
+        />
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:background="@drawable/hearticon"
+        app:layout_constraintStart_toStartOf="@id/whiterect1"
+        app:layout_constraintEnd_toEndOf="@id/whiterect1"
+        app:layout_constraintTop_toTopOf="@id/whiterect1"
+        app:layout_constraintBottom_toBottomOf="@id/whiterect1"
+        />
+
+    <TextView
+        android:id="@+id/fullshottext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Full Shot Woman Stretching Arm"
+        android:textStyle="bold"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/popularexercise"
+        app:layout_constraintTop_toBottomOf="@id/gambar1"
+        />
+
+    <TextView
+        android:id="@+id/beginnertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beginner"
+        android:textSize="10sp"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/popularexercise"
+        app:layout_constraintTop_toBottomOf="@id/fullshottext"
+        />
+
+    <View
+        android:id="@+id/linegambar1"
+        android:layout_width="2dp"
+        android:layout_height="11dp"
+        android:background="@drawable/line"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toEndOf="@id/beginnertext"
+        app:layout_constraintTop_toTopOf="@id/beginnertext"
+        app:layout_constraintBottom_toBottomOf="@id/beginnertext"
+        />
+
+    <View
+        android:id="@+id/clock"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:background="@drawable/clock"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toEndOf="@id/linegambar1"
+        app:layout_constraintTop_toTopOf="@id/beginnertext"
+        app:layout_constraintBottom_toBottomOf="@id/beginnertext"
+        />
+
+    <TextView
+        android:id="@+id/min1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="30 min"
+        android:textSize="10sp"
+        android:alpha="0.84"
+        app:layout_constraintStart_toEndOf="@id/clock"
+        app:layout_constraintTop_toBottomOf="@id/fullshottext"
+        />
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="5dp"
+        android:background="@drawable/line1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/beginnertext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/gambar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/gambar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/beginnertext"
+        />
+
+    <View
+        android:id="@+id/whiterect2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/whiterectangle"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="@id/gambar2"
+        app:layout_constraintTop_toTopOf="@id/gambar2"
+        />
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:background="@drawable/hearticon"
+        app:layout_constraintStart_toStartOf="@id/whiterect2"
+        app:layout_constraintEnd_toEndOf="@id/whiterect2"
+        app:layout_constraintTop_toTopOf="@id/whiterect2"
+        app:layout_constraintBottom_toBottomOf="@id/whiterect2"
+        />
+
+    <TextView
+        android:id="@+id/athletetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Athlete Practicing Monochrome"
+        android:textStyle="bold"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/popularexercise"
+        app:layout_constraintTop_toBottomOf="@id/gambar2"
+        />
+
+    <TextView
+        android:id="@+id/beginnertext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beginner"
+        android:textSize="10sp"
+        android:alpha="0.84"
+        app:layout_constraintStart_toStartOf="@id/popularexercise"
+        app:layout_constraintTop_toBottomOf="@id/athletetext"
+        />
+
+    <View
+        android:id="@+id/linegambar2"
+        android:layout_width="2dp"
+        android:layout_height="11dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/line"
+        app:layout_constraintStart_toEndOf="@id/beginnertext2"
+        app:layout_constraintTop_toTopOf="@id/beginnertext2"
+        app:layout_constraintBottom_toBottomOf="@id/beginnertext2"
+        />
+
+    <View
+        android:id="@+id/clock2"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/clock"
+        app:layout_constraintStart_toEndOf="@id/linegambar2"
+        app:layout_constraintTop_toTopOf="@id/beginnertext2"
+        app:layout_constraintBottom_toBottomOf="@id/beginnertext2"
+        />
+
+    <TextView
+        android:id="@+id/min2"
+        android:layout_width="33dp"
+        android:layout_height="13dp"
+        android:layout_marginLeft="5dp"
+        android:alpha="0.84"
+        android:text="50 min"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@id/clock2"
+        app:layout_constraintTop_toBottomOf="@id/athletetext" />
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="5dp"
+        android:background="@drawable/line1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/beginnertext2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/mealplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingBottom="10dp"
+        android:text="MEAL PLANS"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/popularexercise"
+        app:layout_constraintTop_toBottomOf="@id/beginnertext2"
+        />
+
+    <TextView
+        android:id="@+id/seeallmealplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:text="See All"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/categoryseeall"
+        app:layout_constraintTop_toBottomOf="@id/beginnertext2"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/mealplan"/>
+
+    <TextView
+        android:id="@+id/meal1text"
+        android:layout_width="237dp"
+        android:layout_height="23dp"
+        android:text="Greek salad with lettuce, green onion"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/mealplan"
+        app:layout_constraintTop_toBottomOf="@id/recycler_container" />
+
+    <TextView
+        android:id="@+id/meal1text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150kcal"
+        app:layout_constraintStart_toStartOf="@id/mealplan"
+        app:layout_constraintTop_toBottomOf="@id/meal1text"
+        />
+
+    <View
+        android:id="@+id/mealline"
+        android:layout_width="320dp"
+        android:layout_height="5dp"
+        android:background="@drawable/line1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/meal1text2"
+        app:layout_constraintBottom_toTopOf="@id/meal2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <View
+        android:id="@+id/meal2"
+        android:layout_width="317dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/meal2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mealline"
+        />
+
+    <TextView
+        android:id="@+id/meal2text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salad of fresh vegetables"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/mealplan"
+        app:layout_constraintTop_toBottomOf="@id/meal2"
+        />
+
+    <TextView
+        android:id="@+id/meal2text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="270kcal"
+        app:layout_constraintStart_toStartOf="@id/mealplan"
+        app:layout_constraintTop_toBottomOf="@id/meal2text"
+        />
+
+    <View
+        android:id="@+id/mealline2"
+        android:layout_width="320dp"
+        android:layout_height="5dp"
+        android:background="@drawable/line1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/meal2text2"
+        app:layout_constraintBottom_toTopOf="@id/additional"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/additional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ADDITIONAL EXERCISE"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/mealplan"
+        app:layout_constraintTop_toBottomOf="@id/mealline2"
+        />
+
+    <TextView
+        android:id="@+id/seealladditional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="See All"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/categoryseeall"
+        app:layout_constraintTop_toBottomOf="@id/mealline2"
+        />
+
+    <View
+        android:id="@+id/add1rect"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rect1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/additional"
+        />
+
+    <View
+        android:id="@+id/add1"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:background="@drawable/add1"
+        app:layout_constraintStart_toStartOf="@id/add1rect"
+        app:layout_constraintEnd_toEndOf="@id/add1rect"
+        app:layout_constraintTop_toTopOf="@id/add1rect"
+        app:layout_constraintBottom_toBottomOf="@id/add1rect"
+        />
+
+    <TextView
+        android:id="@+id/exerciseswithjumpingrope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Exercises with Jumping Rope"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/add1rect"
+        app:layout_constraintTop_toTopOf="@id/add1rect"
+        />
+
+    <View
+        android:id="@+id/calories"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/calories"
+        app:layout_constraintStart_toStartOf="@id/exerciseswithjumpingrope"
+        app:layout_constraintTop_toTopOf="@id/add1cal"
+        app:layout_constraintBottom_toBottomOf="@id/add1cal"
+        />
+
+    <TextView
+        android:id="@+id/add1cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="110 kcal"
+        app:layout_constraintStart_toEndOf="@id/calories"
+        app:layout_constraintTop_toBottomOf="@id/exerciseswithjumpingrope"
+        />
+
+    <View
+        android:id="@+id/add1line"
+        android:layout_width="2dp"
+        android:layout_height="11dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/line"
+        app:layout_constraintStart_toEndOf="@id/add1cal"
+        app:layout_constraintTop_toTopOf="@id/add1cal"
+        app:layout_constraintBottom_toBottomOf="@id/add1cal"
+        />
+
+    <View
+        android:id="@+id/add1clock"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/clock"
+        app:layout_constraintStart_toEndOf="@id/add1line"
+        app:layout_constraintTop_toTopOf="@id/add1cal"
+        app:layout_constraintBottom_toBottomOf="@id/add1cal"
+        />
+
+    <TextView
+        android:id="@+id/add1min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="10 min"
+        app:layout_constraintStart_toEndOf="@id/add1clock"
+        app:layout_constraintTop_toBottomOf="@id/exerciseswithjumpingrope"
+        />
+
+    <TextView
+        android:id="@+id/add1beginner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Beginner"
+        app:layout_constraintStart_toStartOf="@id/exerciseswithjumpingrope"
+        app:layout_constraintTop_toBottomOf="@id/calories"
+        />
+
+    <View
+        android:id="@+id/addline1"
+        android:layout_width="320dp"
+        android:layout_height="5dp"
+        android:background="@drawable/line1"
+        app:layout_constraintTop_toBottomOf="@id/add1rect"
+        app:layout_constraintBottom_toTopOf="@id/add2rect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <View
+        android:id="@+id/add2rect"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/rect2"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add1"
+        />
+
+    <View
+        android:id="@+id/add2"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:background="@drawable/add2"
+        app:layout_constraintStart_toStartOf="@id/add2rect"
+        app:layout_constraintEnd_toEndOf="@id/add2rect"
+        app:layout_constraintTop_toTopOf="@id/add2rect"
+        app:layout_constraintBottom_toBottomOf="@id/add2rect"
+        />
+
+    <TextView
+        android:id="@+id/exerciseswithholdingjumpingrope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Exercises with Holding Jumping Rope"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/add2rect"
+        app:layout_constraintTop_toTopOf="@id/add2rect"
+        />
+
+    <View
+        android:id="@+id/calories2"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/calories"
+        app:layout_constraintStart_toStartOf="@id/exerciseswithholdingjumpingrope"
+        app:layout_constraintTop_toTopOf="@id/add2cal"
+        app:layout_constraintBottom_toBottomOf="@id/add2cal"
+        />
+
+    <TextView
+        android:id="@+id/add2cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="135 kcal"
+        app:layout_constraintStart_toEndOf="@id/calories2"
+        app:layout_constraintTop_toBottomOf="@id/exerciseswithholdingjumpingrope"
+        />
+
+    <View
+        android:id="@+id/add2line"
+        android:layout_width="2dp"
+        android:layout_height="11dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/line"
+        app:layout_constraintStart_toEndOf="@id/add2cal"
+        app:layout_constraintTop_toTopOf="@id/add2cal"
+        app:layout_constraintBottom_toBottomOf="@id/add2cal"
+        />
+
+    <View
+        android:id="@+id/add2clock"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/clock"
+        app:layout_constraintStart_toEndOf="@id/add2line"
+        app:layout_constraintTop_toTopOf="@id/add2cal"
+        app:layout_constraintBottom_toBottomOf="@id/add2cal"
+        />
+
+    <TextView
+        android:id="@+id/add2min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="8 min"
+        app:layout_constraintStart_toEndOf="@id/add2clock"
+        app:layout_constraintTop_toBottomOf="@id/exerciseswithholdingjumpingrope"
+        />
+
+    <TextView
+        android:id="@+id/add2beginner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Beginner"
+        app:layout_constraintStart_toStartOf="@id/exerciseswithholdingjumpingrope"
+        app:layout_constraintTop_toBottomOf="@id/calories2"
+        />
+
+    <View
+        android:id="@+id/addline2"
+        android:layout_width="320dp"
+        android:layout_height="5dp"
+        android:background="@drawable/line1"
+        app:layout_constraintTop_toBottomOf="@id/add2rect"
+        app:layout_constraintBottom_toTopOf="@id/add3rect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <View
+        android:id="@+id/add3rect"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/rect3"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add2"
+        />
+
+    <View
+        android:id="@+id/add3"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:background="@drawable/add3"
+        app:layout_constraintStart_toStartOf="@id/add3rect"
+        app:layout_constraintEnd_toEndOf="@id/add3rect"
+        app:layout_constraintTop_toTopOf="@id/add3rect"
+        app:layout_constraintBottom_toBottomOf="@id/add3rect"
+        />
+
+    <TextView
+        android:id="@+id/exerciseswithsitting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Exercises with Sitting Dumbbells"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/add3rect"
+        app:layout_constraintTop_toTopOf="@id/add3rect"
+        />
+
+    <View
+        android:id="@+id/calories3"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/calories"
+        app:layout_constraintStart_toStartOf="@id/exerciseswithsitting"
+        app:layout_constraintTop_toTopOf="@id/add3cal"
+        app:layout_constraintBottom_toBottomOf="@id/add3cal"
+        />
+
+    <TextView
+        android:id="@+id/add3cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="135 kcal"
+        app:layout_constraintStart_toEndOf="@id/calories3"
+        app:layout_constraintTop_toBottomOf="@id/exerciseswithsitting"
+        />
+
+    <View
+        android:id="@+id/add3line"
+        android:layout_width="2dp"
+        android:layout_height="11dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/line"
+        app:layout_constraintStart_toEndOf="@id/add3cal"
+        app:layout_constraintTop_toTopOf="@id/add3cal"
+        app:layout_constraintBottom_toBottomOf="@id/add3cal"
+        />
+
+    <View
+        android:id="@+id/add3clock"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/clock"
+        app:layout_constraintStart_toEndOf="@id/add3line"
+        app:layout_constraintTop_toTopOf="@id/add3cal"
+        app:layout_constraintBottom_toBottomOf="@id/add3cal"
+        />
+
+    <TextView
+        android:id="@+id/add3min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="5 min"
+        app:layout_constraintStart_toEndOf="@id/add3clock"
+        app:layout_constraintTop_toBottomOf="@id/exerciseswithsitting"
+        />
+
+    <TextView
+        android:id="@+id/add3beginner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Beginner"
+        app:layout_constraintStart_toStartOf="@id/exerciseswithsitting"
+        app:layout_constraintTop_toBottomOf="@id/calories3"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/navrect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add3rect"
+        app:layout_constraintBottom_toTopOf="@id/nav"
+        />
+
+    <View
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/navrect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <View
+        android:id="@+id/icon1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/icon1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/icon2"
+        app:layout_constraintTop_toTopOf="@id/nav"
+        app:layout_constraintBottom_toTopOf="@id/hometext"
+        />
+
+    <TextView
+        android:id="@+id/hometext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        app:layout_constraintStart_toStartOf="@id/icon1"
+        app:layout_constraintEnd_toEndOf="@id/icon1"
+        app:layout_constraintTop_toBottomOf="@id/icon1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <View
+        android:id="@+id/icon2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/icon2"
+        app:layout_constraintStart_toEndOf="@id/icon1"
+        app:layout_constraintEnd_toStartOf="@id/icon3"
+        app:layout_constraintTop_toTopOf="@id/nav"
+        app:layout_constraintBottom_toTopOf="@id/mealplanstext"
+        />
+
+    <TextView
+        android:id="@+id/mealplanstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Plans"
+        app:layout_constraintStart_toStartOf="@id/icon2"
+        app:layout_constraintEnd_toEndOf="@id/icon2"
+        app:layout_constraintTop_toBottomOf="@id/icon2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <View
+        android:id="@+id/icon3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/icon3"
+        app:layout_constraintStart_toEndOf="@id/icon2"
+        app:layout_constraintEnd_toStartOf="@id/icon4"
+        app:layout_constraintTop_toTopOf="@id/nav"
+        app:layout_constraintBottom_toTopOf="@id/exercisetext"
+        />
+
+    <TextView
+        android:id="@+id/exercisetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercise"
+        app:layout_constraintStart_toStartOf="@id/icon3"
+        app:layout_constraintEnd_toEndOf="@id/icon3"
+        app:layout_constraintTop_toBottomOf="@id/icon3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <View
+        android:id="@+id/icon4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/icon4"
+        app:layout_constraintStart_toEndOf="@id/icon3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nav"
+        app:layout_constraintBottom_toTopOf="@id/profiletext"
+        />
+
+    <TextView
+        android:id="@+id/profiletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        app:layout_constraintStart_toStartOf="@id/icon4"
+        app:layout_constraintEnd_toEndOf="@id/icon4"
+        app:layout_constraintTop_toBottomOf="@id/icon4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
